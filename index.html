@@ -1,0 +1,637 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ShahzaibSEO - Leading SEO company and agency in Bristol offering expert SEO services, off-page strategies, and local SEO solutions." />
+  <meta name="keywords" content="SEO services Bristol, SEO company Bristol, SEO agency Bristol, off-page SEO, local SEO Bristol" />
+  <meta name="author" content="ShahzaibSEO" />
+  <title>ShahzaibSEO | SEO Services Bristol | SEO Company & Agency</title>
+  <style>
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #000;
+      background: #fff;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: #00da90;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover,
+    button:hover {
+      color: #007a56;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Header */
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #00da90;
+      user-select: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #00da90;
+      color: #000;
+      outline: none;
+    }
+    /* Hero Section */
+    #hero {
+      background: #f9f9f9;
+      padding: 3rem 0 4rem;
+    }
+    #hero .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    #hero-text {
+      flex: 1 1 400px;
+    }
+    #hero-text h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    #hero-text h1 .highlight {
+      background-color: #00da90;
+      color: #000;
+      padding: 0 0.25rem;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    #hero-text p {
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+    /* WhatsApp CTA Button */
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      background-color: #00da90;
+      color: #000;
+      font-weight: 700;
+      padding: 0.75rem 1.25rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 218, 144, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-whatsapp svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
+      fill: #000;
+    }
+    .btn-whatsapp:hover,
+    .btn-whatsapp:focus {
+      background-color: #007a56;
+      box-shadow: 0 6px 12px rgba(0, 122, 86, 0.6);
+      color: #fff;
+      outline: none;
+    }
+    #hero-image {
+      flex: 1 1 300px;
+      max-width: 350px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    /* Stats Section */
+    #stats {
+      background: #000;
+      color: #fff;
+      padding: 3rem 0;
+    }
+    #stats .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    #stats .stat {
+      font-weight: 600;
+    }
+    #stats .stat h3 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    #stats .stat p {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin: 0;
+    }
+    /* Services Section */
+    #services {
+      padding: 3rem 0;
+      background: #f9f9f9;
+    }
+    #services h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    #services h2 .highlight {
+      background-color: #00da90;
+      color: #000;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    #services .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 1.5rem;
+    }
+    #services .service {
+      background: #fff;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 1.25rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    #services .service:hover,
+    #services .service:focus-within {
+      border-color: #00da90;
+      box-shadow: 0 8px 20px rgba(0, 218, 144, 0.3);
+      outline: none;
+    }
+    #services .service h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      color: #00da90;
+      font-size: 1.125rem;
+    }
+    #services .service p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    /* Why Choose Us Section */
+    #why-us {
+      padding: 3rem 0;
+    }
+    #why-us .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    #why-us h2 {
+      width: 100%;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    #why-us h2 .highlight {
+      background-color: #00da90;
+      color: #000;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    #why-us .benefits {
+      flex: 1 1 300px;
+      font-size: 1rem;
+      color: #222;
+    }
+    #why-us ul {
+      list-style: none;
+      padding-left: 1.25rem;
+    }
+    #why-us ul li {
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    #why-us ul li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.2rem;
+      line-height: 1;
+      color: #00da90;
+    }
+    /* Our Work Section */
+    #our-work {
+      background: #f9f9f9;
+      padding: 3rem 0;
+    }
+    #our-work .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    #our-work h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    #our-work h2 .highlight {
+      background-color: #00da90;
+      color: #000;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    #our-work p.description {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    #our-work .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 1.5rem;
+    }
+    #our-work .work-grid img {
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    #our-work .work-grid img:hover,
+    #our-work .work-grid img:focus {
+      transform: scale(1.05);
+      outline: none;
+    }
+    /* Contact Section */
+    #contact {
+      padding: 3rem 0;
+    }
+    #contact .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    #contact h2 .highlight {
+      background-color: #00da90;
+      color: #000;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    #contact .contact-info {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: #222;
+    }
+    #contact .contact-info a {
+      font-weight: 700;
+      color: #00da90;
+    }
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #contact label {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      display: block;
+      color: #000;
+    }
+    #contact input,
+    #contact textarea {
+      padding: 0.75rem 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+    }
+    #contact input:focus,
+    #contact textarea:focus {
+      border-color: #00da90;
+      outline: none;
+      box-shadow: 0 0 8px rgba(0, 218, 144, 0.5);
+    }
+    #contact button[type="submit"] {
+      background-color: #00da90;
+      color: #000;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.125rem;
+      box-shadow: 0 4px 8px rgba(0, 218, 144, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #contact button[type="submit"]:hover,
+    #contact button[type="submit"]:focus {
+      background-color: #007a56;
+      box-shadow: 0 6px 12px rgba(0, 122, 86, 0.6);
+      color: #fff;
+      outline: none;
+    }
+    /* Footer */
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0 0 0.5rem 0;
+      list-style: none;
+    }
+    footer nav ul li a {
+      color: #00da90;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    footer nav ul li a:hover,
+    footer nav ul li a:focus {
+      color: #007a56;
+      outline: none;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      #hero .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      #hero-text, #hero-image {
+        flex: 1 1 100%;
+      }
+      #why-us .container {
+        flex-direction: column;
+      }
+      #why-us .benefits {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo" aria-label="ShahzaibSEO logo">ShahzaibSEO</div>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" aria-label="Hero section with SEO services introduction">
+    <div class="container">
+      <div id="hero-text">
+        <h1>
+          Boost Your Rankings with <span class="highlight">Tried &amp; Tested SEO Services Bristol</span>
+        </h1>
+        <p>Get a <strong>Free Site Audit</strong> and <strong>Off-Page Analysis</strong></p>
+        <a
+          href="https://wa.me/447700900123?text=Hello%20ShahzaibSEO%2C%20I%20am%20interested%20in%20your%20SEO%20services."
+          target="_blank"
+          rel="noopener"
+          class="btn-whatsapp"
+          aria-label="Chat with ShahzaibSEO on WhatsApp"
+        >
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" >
+            <path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.94 11.94 0 001.64 6.01L0 24l6.12-1.6A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.52zm-8.52 17.52a8.4 8.4 0 01-4.5-1.3l-.32-.2-3.1.81.83-3.02-.21-.33a8.4 8.4 0 1117.1-4.5 8.3 8.3 0 01-8.01 8.54zm4.5-6.3c-.25-.12-1.48-.73-1.7-.81-.22-.08-.38-.12-.54.12s-.62.81-.76.98c-.14.17-.28.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.12-.12.25-.28.38-.42.12-.14.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.17 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.15 1.53.09.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.22-.17-.47-.29z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div id="hero-image">
+        <!-- Embedded Google Drive image -->
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8e2f67d-c489-442a-9e3a-45fef39bc618.png"
+          alt="Professional headshot of ShahzaibSEO founder with modern office background"
+          loading="lazy"
+          width="350"
+          height="350"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" aria-label="Company statistics and achievements">
+    <div class="container">
+      <div class="stat">
+        <span aria-hidden="true">📈</span>
+        <h3>5+ Years</h3>
+        <p>SEO Experience</p>
+      </div>
+      <div class="stat">
+        <span aria-hidden="true">🤝</span>
+        <h3>30+ Clients</h3>
+        <p>from Different Niches</p>
+      </div>
+      <div class="stat">
+        <span aria-hidden="true">📝</span>
+        <h3>100+ Posts</h3>
+        <p>Blogging & Content</p>
+      </div>
+      <div class="stat">
+        <span aria-hidden="true">💼</span>
+        <h3>10+ Services</h3>
+        <p>SEO & Marketing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" aria-label="SEO services offered">
+    <div class="container">
+      <h2>💼 Our <span class="highlight">SEO Services</span></h2>
+      <div class="services-grid">
+        <div class="service">
+          <h3>Foundational Links</h3>
+          <p>Build strong foundational backlinks to establish your website's authority and improve search rankings.</p>
+        </div>
+        <div class="service">
+          <h3>Diversity Backlinks</h3>
+          <p>Create diverse link profiles from various sources to enhance your SEO strategy and avoid penalties.</p>
+        </div>
+        <div class="service">
+          <h3>Cloud Stack Links</h3>
+          <p>Leverage cloud-based platforms for high-quality backlinks that boost your website's credibility.</p>
+        </div>
+        <div class="service">
+          <h3>Google Stack Links</h3>
+          <p>Secure backlinks from Google-owned properties to improve trust and ranking signals.</p>
+        </div>
+        <div class="service">
+          <h3>Podcast Links</h3>
+          <p>Get featured on industry podcasts with valuable backlinks that drive targeted traffic.</p>
+        </div>
+        <div class="service">
+          <h3>High Authority Forums</h3>
+          <p>Establish presence and gain backlinks from respected forums in your industry niche.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" aria-label="Reasons to choose ShahzaibSEO">
+    <div class="container">
+      <h2>🌟 Why <span class="highlight">Choose Us</span></h2>
+      <div class="benefits">
+        <ul>
+          <li>Custom SEO strategies tailored specifically for Bristol businesses</li>
+          <li>White-hat, Google-friendly backlinks with high Domain Authority</li>
+          <li>Transparent pricing and detailed monthly reporting</li>
+          <li>24/7 WhatsApp support for immediate assistance</li>
+          <li>Local SEO expertise to dominate Bristol search results</li>
+          <li>Proven track record with businesses across multiple industries</li>
+          <li>Comprehensive off-page SEO strategies that deliver results</li>
+          <li>Regular performance monitoring and strategy adjustments</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work Section -->
+  <section id="our-work" aria-label="Portfolio and case studies">
+    <div class="container">
+      <h2>📊 Our <span class="highlight">Work</span></h2>
+      <p class="description">See how we've helped Bristol businesses achieve remarkable SEO results and dominate their local markets.</p>
+      <div class="work-grid">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dfc8e18c-4fa9-432a-897f-fc0c30855166.png" alt="Before and after SEO results showing dramatic ranking improvements for a local business" loading="lazy">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d5ee3182-3e7e-4ed1-bee9-fa6b38a0f056.png" alt="Analytics dashboard showing organic traffic growth over 6 months of SEO campaign" loading="lazy">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/23212a5c-e423-4f23-b563-c2a15ec8d9a5.png" alt="Client testimonial screenshot praising our Bristol SEO services and results" loading="lazy">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a426280-d116-4eab-b6db-b121324a4155.png" alt="Keyword ranking report showing multiple first-page positions achieved through our strategies" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" aria-label="Contact information and form">
+    <div class="container">
+      <h2>📞 <span class="highlight">Contact Us</span></h2>
+      <div class="contact-info">
+        <p>Ready to boost your rankings? Reach out via WhatsApp or email:</p>
+        <p><a href="https://wa.me/447700900123?text=Hello%20ShahzaibSEO%2C%20I%20want%20to%20improve%20my%20SEO." target="_blank" rel="noopener">WhatsApp: +44 7700 900123</a></p>
+        <p><a href="mailto:info@shahzaibseo.com">info@shahzaibseo.com</a></p>
+      </div>
+      <form id="contact-form">
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+        <div>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 ShahzaibSEO. All rights reserved. Bristol's Premier SEO Agency.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      const whatsappMessage = `New SEO Inquiry:%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      
+      window.open(`https://wa.me/447700900123?text=${whatsappMessage}`, '_blank');
+      
+      // Reset form
+      this.reset();
+      
+      alert('Thank you! Your message has been sent. We will contact you shortly via WhatsApp.');
+    });
+  </script>
+</body>
+</html>
