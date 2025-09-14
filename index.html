@@ -1,12 +1,58 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are these backlinks safe for SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our forum links are placed naturally in aged, indexed threads and include a healthy mix of dofollow and nofollow links."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does delivery take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Delivery typically takes 3–5 business days. You’ll receive a full report with live URLs and indexing status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you guarantee indexing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we guarantee indexing either by using already indexed threads or supporting indexing until complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept PayPal, crypto, and other methods. Contact us on WhatsApp to proceed."
+      }
+    }
+  ]
+}
+</script>
+
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://seoservicesbristol.netlify.app/">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+
+
+  
 <meta name="description" content="Looking for expert SEO services in Bristol? PageUpSEO helps local businesses grow with tailored SEO strategies, higher Google rankings, and real results.">
 <meta name="keywords" content="SEO Bristol, SEO services Bristol, Bristol SEO agency, local SEO, PageUpSEO, SEO expert Bristol, digital marketing Bristol, search engine optimization Bristol">
   <meta name="author" content="ShahzaibSEO" />
@@ -437,6 +483,75 @@
         flex: 1 1 100%;
       }
     }
+
+    /* FAQ Section Styling */
+.faq-section {
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  border-top: 4px solid #00da90;
+  border-radius: 12px;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.faq-heading .highlight {
+  background-color: #00da90;
+  color: #000;
+  padding: 0 0.4rem;
+  border-radius: 4px;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-question {
+  display: block;
+  font-weight: 600;
+  background: #000;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #00da90;
+}
+
+.faq-toggle:checked + .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #fff;
+  color: #333;
+  border: 1px solid #00da90;
+  border-radius: 6px;
+  padding: 0 1.25rem;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+  max-height: 300px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
   </style>
 </head>
 <body>
@@ -793,6 +908,59 @@
       </form>
     </div>
   </section>
+<section id="faqs" class="faq-section" aria-label="Frequently Asked Questions">
+  <div class="container" style="max-width: 700px; margin: 0 auto;">
+    <h2 class="faq-heading"><span class="highlight">Frequently Asked</span> Questions</h2>
+
+    <div class="faq-item" itemscope itemtype="https://schema.org/FAQPage">
+
+      <!-- FAQ 1 -->
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <input type="checkbox" id="faq1" class="faq-toggle">
+        <label for="faq1" class="faq-question" itemprop="name">Are these backlinks safe for SEO?</label>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">
+            Yes, our forum links are placed naturally in aged, indexed threads and include a healthy mix of dofollow and nofollow links. This ensures a safe, organic profile that aligns with Google's SEO best practices.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <input type="checkbox" id="faq2" class="faq-toggle">
+        <label for="faq2" class="faq-question" itemprop="name">How long does delivery take?</label>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">
+            We typically deliver your backlinks within 3–5 business days. Once complete, you'll receive a full report with live URLs and indexing status.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <input type="checkbox" id="faq3" class="faq-toggle">
+        <label for="faq3" class="faq-question" itemprop="name">Do you guarantee indexing?</label>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">
+            Yes! Either the threads are already indexed, or we provide indexing support until they are. We ensure your links get seen by Google.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <input type="checkbox" id="faq4" class="faq-toggle">
+        <label for="faq4" class="faq-question" itemprop="name">How do I pay?</label>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">
+            We accept PayPal, cryptocurrency, or direct bank transfers. Contact us on WhatsApp to get started — we’ll guide you through the process.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
